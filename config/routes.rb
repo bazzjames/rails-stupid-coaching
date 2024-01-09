@@ -1,6 +1,6 @@
+# config/routes.rb
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'ask', to: 'questions#ask'
+  # Add the route for the answer page as well
+  get 'answer', to: 'questions#answer'
 end
